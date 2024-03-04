@@ -36,14 +36,13 @@ int main()
             log('\n')
                 log(j2.n);
             log("ganó :(");
-            log('\n');
-            return 0;
+            log('\n') return 0;
         }
         else
         {
 
             j2.pJ = &j1;
-            (j1.atacar(j1.pJ));
+            (j1.atacar(j2.pJ));
         }
     if (j2.hp <= 0)
 
@@ -53,14 +52,13 @@ int main()
         log('\n')
             log(j1.n);
         log(" ganó :(");
-        log('\n');
-        return 0;
+        log('\n') return 0;
     }
     else
     {
-        j1.pJ = &j2;
-        (j2.atacar(j2.pJ));
+        j1.pJ = &j2(j2.atacar(j1.pJ));
     }
+    return 0;
 }
 
 Jugador::Jugador()
